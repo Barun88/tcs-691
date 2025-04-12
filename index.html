@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatMusic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="top_navbar">
+        <a href="#cat_a_log" class="top_navbar_opts">Cat-A-Log</a>
+    </div>
+
+    <div id="spotlight">
+        <h2>Spotlight</h2>
+      
+        <div class="album_container">
+          <div class="album_card" id="album1">
+            <img class="album_cover" src="https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png" alt="TPAB">
+            <h3 class="album_name" id="aName1">To Pimp A Butterfly</h3>
+            <p class="artist_name" id="artName1">Kendrick Lamar</p>
+          </div>
+      
+          <div class="album_card">
+            <img class="album_cover" src="https://upload.wikimedia.org/wikipedia/en/3/34/Sufjan_Stevens_The_Ascension_Cover.png" alt="TheAscension">
+            <h3 class="album_name">The Ascension</h3>
+            <p class="artist_name">Sufjan Stevens</p>
+          </div>
+      
+          <div class="album_card">
+            <img class="album_cover" src="https://upload.wikimedia.org/wikipedia/en/5/56/ModalMusic.jpg" alt="ModalSoul">
+            <h3 class="album_name">Modal Soul</h3>
+            <p class="artist_name">Nujabes</p>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="by_genre"></div>
+
+    <div id="gif_hover_card">
+        <img src="src/static.jpg" alt="static_vinyl" id="static_gif">
+        <img src="src/bg_gif.gif" alt="animated_vinyl" id="animated_gif">
+    </div>
+
+   <div id="music_player">
+    <button id="play_pause">&#9658</button>
+    <span id="track_name">No Track</span>
+    <input type="range" id="seek_bar" value="0">
+    <span id="current_time">0:00</span>/ <span id="duration">0:00</span>
+    <audio src="src/cat-meow-321642.mp3" id="audio_player"></audio>
+  </div>
+<!-- 
+    <!- <div id="song_otd">
+        <h2>Spotlight</h2>
+        <img src="https://i.guim.co.uk/img/static/sys_images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4_9a6d_4f78_8ca8_594ab646d198_bestSizeAvailable.jpeg?width=465&dpr=1&s=none&crop=none" alt="TPAB" id="song_otd_cover">
+    </div> -->
+    
+    <script src="playback.js"></script>
+    <script src="behaviour.js"></script>
+</body>
+</html>
