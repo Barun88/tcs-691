@@ -10,22 +10,25 @@
     <div id="top_navbar">
         <a href="#cat_a_log" class="top_navbar_opts">Cat-A-Log</a>
     </div>
+
     <div id="container">
-        <form class="login_form">
+        <form class="login_form" action="login.php" method="POST">
             <h2>Welcome Back</h2>
-            <div class="form_group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="you@example.com" required/>
-            </div>
-            <div class="form_group">
-              <label for="password">Password</label>
-              <input type="password" id="password" placeholder="••••••••" required/>
-            </div>
-              <a href="#" id="forgot_a">Forgot password?</a>
             
-            <button>Login</button>
-          </form>
-        
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form_group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required />
+            </div>
+
+            <a href="#" id="forgot_a">Forgot password?</a>
+
+            <button type="submit">Login</button>
+        </form>
     </div>
 </body>
 </html>

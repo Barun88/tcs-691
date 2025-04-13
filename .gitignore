@@ -1,4 +1,3 @@
 #ignoring jsons
-*.json
+user.json
 #ignoring auth
-auth/
