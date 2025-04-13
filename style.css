@@ -208,4 +208,14 @@ light:#A64D79
   #seek_bar::-webkit-slider-thumb:hover{
     transform: scale(1.2);
   }
+
+  #login_link {
+    display: inline-block !important;
+    color: red !important;
+    font-size: 20px !important;
+    background: yellow !important;
+    position: relative !important;
+    z-index: 9999 !important;
+  }
+  
   
