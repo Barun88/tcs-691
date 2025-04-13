@@ -1,0 +1,109 @@
+body{
+    background-color:#1A1A1D;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#top_navbar{
+    position:absolute;
+    height:5%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:#3B1C32;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top_navbar_opts{
+    color:white;
+    text-decoration: none;
+    transition:0.3s ease-in-out;
+    padding:5px;
+}
+
+.top_navbar_opts:hover {
+    margin-top: -0.3%;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    margin-top:100px;
+    background:rgba(255, 255, 255, 0.02);
+    width:400px;
+    height:400px;
+    padding:5px;
+    border-radius: 16px;
+}
+
+.login_form{
+    padding: 2rem 2.5rem;
+
+}
+
+.login_form h2{
+    text-align: center;
+    margin-bottom:2rem;
+    font-size:1.8rem;
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 0.75rem;
+    background-color:rgba(255, 255, 255,0.02);
+    color:#fff;
+    border: none;
+    font-size: 1rem;
+}
+
+input::placeholder{
+    color:#888;
+}
+
+.login_form a{
+    color:#A64D79;
+    text-decoration: none;
+}
+
+.login_form a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    padding: 0.8rem;
+    background-color:#A64D79;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3 ease;
+    border: none;
+    margin-top: 1.5rem;
+    align-self: auto;
+}
+
+button:hover{
+    background-color:#be588b ;
+}
+
+#forgot_a{
+    display: block;
+    padding-top:0.5rem ;
+}

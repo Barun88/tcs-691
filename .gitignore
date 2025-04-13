@@ -1,0 +1,4 @@
+#ignoring jsons
+*.json
+#ignoring auth
+auth/
