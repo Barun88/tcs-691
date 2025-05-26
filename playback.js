@@ -13,7 +13,7 @@ document.querySelectorAll('.album_card').forEach(card => {
     card.addEventListener('click',()=>{
         const artist=card.querySelector('.artist_name').textContent;
         const album=card.querySelector('.album_name').textContent;
-        currentTrack=`src/${artist}/${album}/smaple.mp3`;
+        currentTrack=`src/${artist}/${album}/sample.mp3`;
         console.log(currentTrack);
         // console.log(`src/${artist}/${album}/smaple.mp3`);
     })    

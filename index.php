@@ -7,7 +7,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     exit();
 }
 
-// User is logged in, get their username
+// User is logged in get their username
 $username = $_SESSION['username'] ?? 'User';
 ?>
 
@@ -16,14 +16,14 @@ $username = $_SESSION['username'] ?? 'User';
 <head>
     <meta charset="UTF_8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatMusic</title>
+    <title>Cat-A-Log</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="top_navbar">
         <a href="#cat_a_log" class="top_navbar_opts">Cat-A-Log</a>
-        <span class="top_navbar_opts">Welcome, <?php echo htmlspecialchars($username); ?>!</span>
+        <span class="top_navbar_opts">Welcome, <?php echo htmlspecialchars(string: $username); ?>!</span>
         <a href="logout.php" class="top_navbar_opts" id="logout_link">Logout</a>
     </div>
 
