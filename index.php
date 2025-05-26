@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    // redirect to login page if not log in
+    header(header: 'Location: login.php');
+    exit();
+}
+
+// User is logged in, get their username
+$username = $_SESSION['username'] ?? 'User';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +23,8 @@
 
     <div id="top_navbar">
         <a href="#cat_a_log" class="top_navbar_opts">Cat-A-Log</a>
-        <a href="login.html" class="top_navbar_opts" id="login_link">Login</a>
+        <span class="top_navbar_opts">Welcome, <?php echo htmlspecialchars($username); ?>!</span>
+        <a href="logout.php" class="top_navbar_opts" id="logout_link">Logout</a>
     </div>
 
     <div id="spotlight">
@@ -52,11 +66,6 @@
     <span id="current_time">0:00</span>/ <span id="duration">0:00</span>
     <audio src="src/cat-meow-321642.mp3" id="audio_player"></audio>
   </div>
-<!-- 
-    <!- <div id="song_otd">
-        <h2>Spotlight</h2>
-        <img src="https://i.guim.co.uk/img/static/sys_images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4_9a6d_4f78_8ca8_594ab646d198_bestSizeAvailable.jpeg?width=465&dpr=1&s=none&crop=none" alt="TPAB" id="song_otd_cover">
-    </div> -->
     
     <script src="playback.js"></script>
     <script src="behaviour.js"></script>

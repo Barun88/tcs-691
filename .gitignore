@@ -1,3 +1,4 @@
+#ignoring nothing for now
 #ignoring jsons
-user.json
+#user.json
 #ignoring auth

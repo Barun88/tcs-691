@@ -18,9 +18,10 @@ light:#A64D79
     left:0;
     background-color:#3B1C32;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .top_navbar_opts{
@@ -34,11 +35,17 @@ light:#A64D79
     margin-top: -0.3%;
 }
 
-#login_link{
-  margin-right:0;
+#logout_link{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
 }
 
-
+#logout_link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 0;
+}
 
 /* 
 #song-otd {
@@ -208,5 +215,3 @@ light:#A64D79
   #seek_bar::-webkit-slider-thumb:hover{
     transform: scale(1.2);
   }
-
-  
