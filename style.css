@@ -215,3 +215,12 @@ light:#A64D79
   #seek_bar::-webkit-slider-thumb:hover{
     transform: scale(1.2);
   }
+
+  #previous_btn,#next_btn{
+    background:none;
+    color:inherit;
+    border: none;
+    padding:0;
+    cursor: pointer;
+    outline: inherit;
+  }

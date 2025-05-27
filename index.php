@@ -59,8 +59,10 @@ $username = $_SESSION['username'] ?? 'User';
         <img src="src/bg_gif.gif" alt="animated_vinyl" id="animated_gif">
     </div>
 
-   <div id="music_player">
+  <div id="music_player">
+    <button id="previous_btn"><b><<</b></button>
     <button id="play_pause">&#9658;</button>
+    <button id="next_btn"><b>>></b></button>
     <span id="track_name">No Track</span>
     <input type="range" id="seek_bar" value="0" min="0" max="100" step="0.1">
     <span id="current_time">0:00</span> / <span id="duration">0:00</span>
