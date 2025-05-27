@@ -1,0 +1,12 @@
+# Enable range requests for audio files
+<FilesMatch "\.(mp3|wav|ogg|m4a|aac)$">
+    Header set Accept-Ranges bytes
+    Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+
+# Ensure proper MIME types
+AddType audio/mpeg .mp3
+AddType audio/wav .wav
+AddType audio/ogg .ogg
+AddType audio/mp4 .m4a
+AddType audio/aac .aac

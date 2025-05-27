@@ -60,11 +60,11 @@ $username = $_SESSION['username'] ?? 'User';
     </div>
 
    <div id="music_player">
-    <button id="play_pause">&#9658</button>
+    <button id="play_pause">&#9658;</button>
     <span id="track_name">No Track</span>
-    <input type="range" id="seek_bar" value="0">
-    <span id="current_time">0:00</span>/ <span id="duration">0:00</span>
-    <audio src="src/cat-meow-321642.mp3" id="audio_player"></audio>
+    <input type="range" id="seek_bar" value="0" min="0" max="100" step="0.1">
+    <span id="current_time">0:00</span> / <span id="duration">0:00</span>
+    <audio id="audio_player" src="src/cat-meow-321642.mp3"></audio>
   </div>
     
     <script src="playback.js"></script>
